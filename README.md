@@ -173,6 +173,27 @@ The project uses:
 
 This project is licensed under the AGPL-3.0 License - see the [LICENSE](LICENSE) file for details.
 
+## Documentation
+
+### For Users
+- This file (README.md) - Getting started and features
+
+### For Developers
+- **CLAUDE.md** - Comprehensive developer documentation following /dev-process methodology
+  - System architecture and data flows
+  - Component interdependencies and impact analysis
+  - Debugging points and common issues
+  - Development workflows and testing strategies
+- **test/TEST_WORKFLOW.md** - Testing philosophy and manual test procedures
+
+### Development Process
+This project follows a context-preservation methodology to maintain architectural coherence across development sessions. All code changes require synchronized CLAUDE.md updates (enforced by pre-commit hook).
+
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please:
+1. Read CLAUDE.md to understand the system architecture
+2. Follow the architectural thinking protocol (map dependencies, analyze downstream effects)
+3. Update CLAUDE.md with all changes (component changes, data flows, impact analysis)
+4. Update README.md if user-facing behavior changes
+5. Submit a Pull Request
